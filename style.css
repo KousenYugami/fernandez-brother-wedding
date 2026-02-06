@@ -1,0 +1,158 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-size: 4rem;
+}
+
+.intro {
+    background-image: url("./assets/hero.png");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro .container h1 {
+    color: #EDEBDF;
+    font-size: 9.375rem;
+    font-weight: 400;
+    line-height: 0.6;
+}
+
+.intro .container span.eyebrow {
+    position: relative;
+    bottom: -40px;
+}
+
+.intro .container span.imperial-script-regular {
+    font-size: 8rem;
+    font-weight: 400;
+}
+
+.intro .container .subheading {
+    color: #EDEBDF;
+    font-size: 2.5rem;
+    padding-top: 10rem;
+    word-spacing: 0.75rem;
+}
+
+.setting {
+    background-color: #EEE1D9;
+}
+
+.setting .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.setting .container .setting-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #D470A2;
+}
+
+.setting .container .setting-details h2{
+    font-size: 8rem;
+}
+
+.setting .container .setting-details h2 sup{
+    padding-left: 0.5rem;
+}
+
+
+.setting .container .setting-details h3{
+    font-size: 2.5rem;
+}
+
+.message {
+    background-image: url("./assets/message.png");
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.message .message-details {
+    background-color: #C54B8CCC;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+    padding: 3rem 0;
+}
+
+.message .message-details h2,
+.message .message-details h3  {
+    font-size: 4rem;
+}
+
+.message .message-details p {
+    padding-top: 1rem;
+    font-size: 1rem;
+    max-width: 560px;
+}
+
+.message .message-details p.resignation {
+    font-size: 2rem;
+}
+
+
+.container {
+    padding: 2.5rem 0;
+}
+
+.section-heading {
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.container p,
+.container table {
+    text-align: center;
+}
+
+a.btn-primary {
+    background-color: #FA8112;
+    border-color: #FA8112;
+}
+
+a.btn-primary:hover {
+    background-color: #df7410;
+    border-color: #df7410;
+}
+
+@media (min-width: 1200px) {
+    .desktop-dropdown {
+        display: flex;
+        width: 100%;
+    }
+
+    .desktop-dropdown ul {
+        width: 100%;
+    }
+
+    .mobile-dropdown {
+        display: none;
+    }
+}
+
+/* Fonts */
+
+.cactus-classical-serif-regular {
+    font-family: "Cactus Classical Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.imperial-script-regular {
+  font-family: "Imperial Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
