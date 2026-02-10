@@ -1,11 +1,6 @@
 /* Import Fonts */
 
 @font-face {
-    font-family: "Cactus Classical Serif";
-    src: url("./assets/fonts/cactus.ttf");
-}
-
-@font-face {
     font-family: "Imperial Script";
     src: url("./assets/fonts/imperial.ttf");
 }
