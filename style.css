@@ -162,6 +162,11 @@ p {
     display: none;
 }
 
+.sponsors .divider {
+    display: flex;
+    align-items: center;
+}
+
 .sponsors .section-heading {
     font-size: 4rem;
     color: #C54B8C;
@@ -178,12 +183,11 @@ p {
 }
 
 .sponsors p:not(.upper) {
-    line-height: 0.6;
+    line-height: 1;
 }
 
 .principal-list {
     display: grid;
-    grid-template-columns: 50% 50%;
     padding-top: 2.5rem;
 }
 
@@ -205,6 +209,10 @@ p {
 .notables.two-col {
     display: grid;
     grid-template-columns: 50% 50%;
+}
+
+.notables.half-col p.cactus-classical-serif-regular {
+    padding-bottom: 0.75rem;
 }
 
 .notables.two-col.three-row p {
@@ -328,6 +336,22 @@ a.btn-primary:hover {
 }
 
 @media (min-width: 768px) {
+    .one-col {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .two-col {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .notables.half-col {
+        width: 50%;
+    }
+
     .others .detail-grid {
         grid-template-columns: 50% 50%;
         padding: 2.5rem;
@@ -357,11 +381,6 @@ a.btn-primary:hover {
         font-size: 8rem;
     }
 
-    .sponsors .container {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
     .setting .couple-image img {
         width: auto;
     }
@@ -378,12 +397,17 @@ a.btn-primary:hover {
         width: 720px;
     }
 
+    .sponsors .container {
+        gap: 0;
+    }
+
     .sponsors .section-heading {
         font-size: 5rem;
     }
 
     .sponsors .container img {
         display: block;
+        transform: rotate(90deg);
     }
 
     .sponsors p.upper {
@@ -393,7 +417,11 @@ a.btn-primary:hover {
 
     .principal-sponsors,
     .secondary-sponsors {
-        height: 600px;
+        width: 75%;
+    }
+
+    .principal-list {
+        grid-template-columns: 50% 50%;
     }
 
     .message .message-details {
